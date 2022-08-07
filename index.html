@@ -17,13 +17,24 @@
         
         <!-- javascript-->
         <script>
-            document.getElementById('email').onkeyup = function() {
-                if (this.value.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/)) {
-                    this.className = 'correct';
-                } else {
-                    this.className = 'incorrect';
+            const input=document.querySelector("input"),
+            emailIcon=document.querySelector(".email-icon");
+            input.addEventListener("keyup",()=>{
+                let pattern = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+                if(input.value===""){
+                    return console.log("empty");
+
                 }
-            }
+               if(input.value.match(pattern)){
+                //    emailIcon.classList.add("active");
+                console.log("valid");
+               }  
+                else{
+                 //    emailIcon.classList.remove("active");
+                 console.log("invalid");
+                } 
+                
+            })
         </script>
     </div>
     
