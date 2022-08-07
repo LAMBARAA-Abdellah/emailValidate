@@ -45,3 +45,13 @@ body {
     color: #b4b4b4;
     
 }
+.erreur{
+    color: red;
+    font-size: 12px;
+    font-weight: bold;
+    margin:10px 30px;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
