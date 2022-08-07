@@ -15,7 +15,16 @@
          <i class="uil uil-envelope email-icon"></i>
        
         
-        
+        <!-- javascript-->
+        <script>
+            document.getElementById('email').onkeyup = function() {
+                if (this.value.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/)) {
+                    this.className = 'correct';
+                } else {
+                    this.className = 'incorrect';
+                }
+            }
+        </script>
     </div>
     
  </body>
