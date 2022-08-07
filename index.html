@@ -26,8 +26,8 @@
 
                 }
                if(input.value.match(pattern)){
-                //    emailIcon.classList.add("active");
-                console.log("valid");
+                  emailIcon.classList.replace("uil-envelope","uil-check-circle");
+                    return emailIcon.style.color="green";
                }  
                 else{
                  //    emailIcon.classList.remove("active");

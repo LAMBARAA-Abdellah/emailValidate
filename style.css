@@ -17,7 +17,7 @@ body {
 .input-field{
    position: relative;
    height: 50px;
-   width: 280px;
+   width: 380px;
     border-radius: 6px;
     background-color: #fff;
     border-shadow: 0px 5px 10px rgba(0,0,0,0.1);
@@ -38,7 +38,7 @@ body {
 }
 .input-field .email-icon{
     position: absolute;
-    right: 15px;
+    right: 25px;
     top: 50%;
     transform: translateY(-50%);
     font-size: 22px;
